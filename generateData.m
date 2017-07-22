@@ -7,3 +7,4 @@ options.roomT = 90; % [F]
 options.Vmax = 15; % [mph]
 options.Vmin = 10; %[mph]
 data = GenTestData(25,25,1,'FIRE',options);
+OutputJsonVars( data, 'FireData' );
