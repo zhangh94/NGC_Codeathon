@@ -74,9 +74,9 @@ end
         for k1 = 2:rows
             for l1 = 2:cols-1
                 if (k1 ==  rows)
-                    output(k1,l1) = mean([input(k1-1:k1,l1)' input(k1,l1-1:l1+1)]);
+                    output(k1,l1) = mean([input(k1-1:k1,l1)' input(k1,l1-1:l1+1) input(k1-1,l1-1) input(k1-1,l1+1) ]);
                 else
-                    output(k1,l1) = mean([input(k1-1:k1+1,l1)' input(k1,l1-1:l1+1)]);
+                    output(k1,l1) = mean([input(k1-1:k1+1,l1)' input(k1,l1-1:l1+1) input(k1-1,l1-1) input(k1-1,l1+1) input(k1+1,l1-1) input(k1+1,l1+1) ]);
                 end
                 
             end    
